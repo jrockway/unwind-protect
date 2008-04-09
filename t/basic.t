@@ -7,7 +7,7 @@ use Unwind::Protect;
 sub try_it($$);
 
 my $unwound_ok = 0;
-
+my $ret;
 throws_ok {
     try_it 1, 0;
 } qr/FORM DEATH/;
